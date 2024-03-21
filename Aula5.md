@@ -35,7 +35,27 @@ bolo2.cobertura = False
 bolo3 = bolo1
 bolo3.cobertura = False
 ```
+---
+### Com construtor:
+```
+class Bolo:
+    def __init__(self,nome,recheio,massa,cobertura):
+        self.nome = nome
+        self.recheio = recheio
+        self.massa = massa
+        self.cobertura = cobertura
 
+bolo1 = Bolo('chessecake','morango','pao_de_lo',True)
+
+bolo2 = Bolo('bento_cake','chocolate','baunilha',False)
+
+#dessa forma dará errado com o construtor
+#bolo3 = Bolo()
+#bolo3.cobertura = False
+
+bolo3 = bolo1
+bolo3.cobertura = False
+```
 ## Segundo exercício
 ```
 #class Carro:
@@ -64,6 +84,4 @@ carro3.arcondicionado = False
 
 print(carro1.arcondicionado,carro2.arcondicionado,carro3.arcondicionado)
 print(carro1.modelo,carro2.modelo,carro3.modelo)
-
-
 ```
