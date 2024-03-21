@@ -35,3 +35,35 @@ bolo2.cobertura = False
 bolo3 = bolo1
 bolo3.cobertura = False
 ```
+
+## Segundo exercício
+```
+#class Carro:
+#    def __init__(self,modelo,ano,cor,arcondicionado):
+#        self.modelo = modelo
+#        self.ano = ano
+#        self.cor = cor
+#        self.arcondicionado = True
+        
+class Carro:
+   def __init__(self,modelo,ano,cor,arcondicionado):
+       self.modelo = modelo
+       self.ano = ano
+       self.cor = cor
+       self.arcondicionado = arcondicionado    
+
+carro1 = Carro('brasilia',1999,'amarela',True)
+carro2 = Carro('fusca', 2009, 'preto', False)
+
+#Criando o 3 carro na versao 1
+#carro3 = Carro('uno',1999, 'preto', False)
+
+#Criando o 3 carro na versao 2
+carro3 = carro1
+carro3.arcondicionado = False
+
+print(carro1.arcondicionado,carro2.arcondicionado,carro3.arcondicionado)
+print(carro1.modelo,carro2.modelo,carro3.modelo)
+
+
+```
